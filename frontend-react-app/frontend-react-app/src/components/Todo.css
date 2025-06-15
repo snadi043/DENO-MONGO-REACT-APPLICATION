@@ -1,0 +1,50 @@
+.todos-form,
+.todos-list {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 40rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+}
+
+.todos-form label,
+.todos-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todos-form label {
+  font-weight: bold;
+}
+
+.todos-form input {
+  font: inherit;
+  border: 1px solid #ccc;
+}
+
+.todos-form input:focus {
+  border-color: purple;
+}
+
+.todos-list {
+  list-style: none;
+}
+
+.todos-list li {
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos-list span {
+  font-weight: bold;
+  color: purple;
+}
+
+.todo-actions button {
+  margin-left: 1rem;
+}
