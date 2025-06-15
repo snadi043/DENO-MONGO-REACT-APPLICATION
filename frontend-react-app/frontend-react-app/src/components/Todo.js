@@ -97,7 +97,7 @@ const Todo = () => {
                 {todos.map((todo) => 
                 (
                     <li key={todo.id}>
-                        <span>{todo.text}</span>
+                        <span>{todo.title.text}</span>
                         <div className="todo-actions">
                             <button onClick={editButtonHandler.bind(null, todo)}>Edit</button>
                             <button onClick={deleteButtonHandler.bind(null, todo.id)}>Delete</button>

@@ -7,7 +7,7 @@ interface Todo{
     title: string
 }
 
-let todos: Todo[] = [{id: new Date().toISOString(), title: 'Hey Dude!!!'}];
+let todos: Todo[] = [];
 
 router.get('/todos', (ctx) => {
     ctx.response.body = {todos: todos};
