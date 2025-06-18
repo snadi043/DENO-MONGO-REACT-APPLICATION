@@ -13,6 +13,10 @@ import { Application } from "https://deno.land/x/oak/mod.ts";
 
 import todoRoutes from './routes/todo.ts';
 
+import {connectDB} from './helpers/db_client.ts'
+
+connectDB();
+
  // The application class manages the HTTP server, handles the middleware functions and deals with the errors 
 const app = new Application();
 
